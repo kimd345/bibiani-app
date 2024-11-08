@@ -16,7 +16,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Bibiani",
-  description: "Where Bibim meets Biriani",
+  description: "East meets South on the counter",
+  // description: "Bibim meets Biriani",
 };
 
 export default function RootLayout({

@@ -1,6 +1,7 @@
 // import { useState } from 'react';
 import Image from 'next/image';
-import { MenuIcon, XIcon } from 'lucide-react';
+import { Menu, XIcon } from 'lucide-react';
+import Link from 'next/link';
 
 export default function NavBar() {
 	// const [isOpen, setIsOpen] = useState(false);
@@ -10,20 +11,27 @@ export default function NavBar() {
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 				<div className='flex justify-between h-16'>
 					<div className='flex-shrink-0 flex items-center'>
-						<a href='https://bibiani.com'>
-							<Image src='/logo.png' alt='Logo' width={40} height={40} />
-						</a>
+						<Link href='https://bibiani.com'>
+							<Image
+								className='dark:invert'
+								src='/bibiani-logo.svg'
+								alt='Logo'
+								width={64}
+								height={64}
+								priority
+							/>
+						</Link>
 					</div>
 					<div className='hidden md:flex md:items-center md:space-x-4'>
-						<a href='#' className='text-gray-800 hover:text-gray-600'>
+						<Link href='order' className='text-gray-800 hover:text-gray-600'>
 							Order
-						</a>
-						<a href='#' className='text-gray-800 hover:text-gray-600'>
+						</Link>
+						<Link href='survey' className='text-gray-800 hover:text-gray-600'>
 							Survey
-						</a>
-						<a href='#' className='text-gray-800 hover:text-gray-600'>
+						</Link>
+						<Link href='about' className='text-gray-800 hover:text-gray-600'>
 							About Us
-						</a>
+						</Link>
 					</div>
 					<div className='flex items-center md:hidden'>
 						<button
@@ -33,7 +41,7 @@ export default function NavBar() {
 							{/* {isOpen ? (
 								<XIcon className='h-6 w-6' />
 							) : ( */}
-								<MenuIcon className='h-6 w-6' />
+							<Menu className='h-6 w-6' />
 							{/* )} */}
 						</button>
 					</div>
