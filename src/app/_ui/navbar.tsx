@@ -8,42 +8,45 @@ export default function NavBar() {
 
 	return (
 		<nav className='bg-white shadow-md'>
-			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+			<div className='w-full  px-4 sm:px-6 lg:px-8'>
 				<div className='flex justify-between h-16'>
-					<div className='flex-shrink-0 flex items-center'>
-						<Link href='https://bibiani.com'>
-							<Image
-								className='dark:invert'
-								src='/bibiani-logo.svg'
-								alt='Logo'
-								width={64}
-								height={64}
-								priority
-							/>
-						</Link>
-					</div>
-					<div className='hidden md:flex md:items-center md:space-x-4'>
-						<Link href='order' className='text-gray-800 hover:text-gray-600'>
-							Order
-						</Link>
-						<Link href='survey' className='text-gray-800 hover:text-gray-600'>
-							Survey
-						</Link>
-						<Link href='about' className='text-gray-800 hover:text-gray-600'>
-							About Us
-						</Link>
-					</div>
-					<div className='flex items-center md:hidden'>
-						<button
-							// onClick={() => setIsOpen(!isOpen)}
-							className='text-gray-800 hover:text-gray-600 focus:outline-none'
-						>
-							{/* {isOpen ? (
+					<div className='flex-shrink-0 flex items-center gap-10'>
+						<div>
+							<Link href='https://bibiani.com' className='flex items-center'>
+								<Image
+									className='dark:invert'
+									src='/bibiani-logo.svg'
+									alt='Logo'
+									width={64}
+									height={64}
+									priority
+								/>
+								<span className='text-2xl'>Bibiani</span>
+							</Link>
+						</div>
+						<div className='hidden md:flex md:items-center md:gap-8'>
+							<Link href='order' className='text-gray-800 hover:text-gray-600'>
+								Order
+							</Link>
+							<Link href='survey' className='text-gray-800 hover:text-gray-600'>
+								Survey
+							</Link>
+							<Link href='about' className='text-gray-800 hover:text-gray-600'>
+								About Us
+							</Link>
+						</div>
+						<div className='flex items-center md:hidden'>
+							<button
+								// onClick={() => setIsOpen(!isOpen)}
+								className='text-gray-800 hover:text-gray-600 focus:outline-none'
+							>
+								{/* {isOpen ? (
 								<XIcon className='h-6 w-6' />
 							) : ( */}
-							<Menu className='h-6 w-6' />
-							{/* )} */}
-						</button>
+								<Menu className='h-6 w-6' />
+								{/* )} */}
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
