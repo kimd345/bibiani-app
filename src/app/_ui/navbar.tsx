@@ -12,7 +12,8 @@ export default function NavBar() {
 				<div className='flex justify-between h-16'>
 					<div className='flex-shrink-0 flex items-center gap-10'>
 						<div>
-							<Link href='https://bibiani.com' className='flex items-center'>
+							<Link href='http://localhost:3000' className='flex items-center'>
+							{/* <Link href='https://bibiani.com' className='flex items-center'> */}
 								<Image
 									className='dark:invert'
 									src='/bibiani-logo.svg'
@@ -30,6 +31,9 @@ export default function NavBar() {
 							</Link>
 							<Link href='survey' className='text-gray-800 hover:text-gray-600'>
 								Survey
+							</Link>
+							<Link href='menu' className='text-gray-800 hover:text-gray-600'>
+								Menu
 							</Link>
 							<Link href='about' className='text-gray-800 hover:text-gray-600'>
 								About Us

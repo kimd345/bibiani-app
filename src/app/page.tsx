@@ -2,16 +2,25 @@ import Image from 'next/image';
 
 export default function Home() {
 	return (
-		<div className='grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]'>
+		// <div className='grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]'>
+		<div className='flex flex-col'>
 			<main className='flex flex-col gap-8 row-start-2 items-center sm:items-start'>
-				<Image
-					className='dark:invert'
-					src='/next.svg'
-					alt='Next.js logo'
-					width={180}
-					height={38}
-					priority
-				/>
+				<div className='flex w-full'>
+					<div className=' justify-center flex flex-col flex-1 px-6 gap-5'>
+						<h1 className="text-6xl">East Meets South, Southeast Reimagined!</h1>
+						<h2 className="text-3xl">Korea and India mingle like {"it's"} Prom in Edison, NJ</h2>
+					</div>
+					<Image
+						className='object-cover flex-1'
+						src='/korean-indian.png'
+						alt='Korean Indian Banner'
+						width={0}
+						height={0}
+						sizes='100vw'
+						style={{ width: '100%', height: '700px' }} // optional
+						priority
+					/>
+				</div>
 				<ul className='text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]'>
 					<li className='mb-2'>
 						Bowl
