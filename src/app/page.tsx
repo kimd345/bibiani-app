@@ -21,15 +21,15 @@ export default function Home() {
 						priority
 					/>
 				</div>
-				<ul className='text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]'>
+				{/* <ul className='text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]'>
 					<li className='mb-2'>
 						Bowl
-						{/* <code className='bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold'>
+						<code className='bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold'>
 							src/app/page.tsx
-						</code> */}
+						</code>
 					</li>
 					<li>Chalupa</li>
-				</ul>
+				</ul> */}
 
 				<div className='flex gap-4 items-center flex-col sm:flex-row'>
 					<a

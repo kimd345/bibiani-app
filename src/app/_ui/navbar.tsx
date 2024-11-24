@@ -29,9 +29,9 @@ export default function NavBar() {
 							<Link href='order' className='text-gray-800 hover:text-gray-600'>
 								Order
 							</Link>
-							<Link href='survey' className='text-gray-800 hover:text-gray-600'>
+							{/* <Link href='survey' className='text-gray-800 hover:text-gray-600'>
 								Survey
-							</Link>
+							</Link> */}
 							<Link href='menu' className='text-gray-800 hover:text-gray-600'>
 								Menu
 							</Link>
